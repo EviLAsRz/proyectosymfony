@@ -15,6 +15,14 @@ class ArticuloController extends AbstractController
             'controller_name' => 'ArticuloController',
         ]);
     }
+
+    public function articulo_show(string $slug): Response
+    {
+        return $this->render('articulo/unarticulo.html.twig', [
+            'articulo' => $slug,
+            'controller_name' => 'ArticuloController',
+        ]);
+    }
 }
 
 

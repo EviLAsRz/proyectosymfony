@@ -9,3 +9,7 @@ kernel:
 articulo_controller:
     path: /articulos
     controller: App\Controller\ArticuloController::index
+
+un_articulo:
+    path: /articulos/{slug}
+    controller: App\Controller\ArticuloController::articulo_show
