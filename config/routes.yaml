@@ -9,7 +9,13 @@ kernel:
 articulo_controller:
     path: /articulos
     controller: App\Controller\ArticuloController::index
+    methods: GET|HEAD
 
-un_articulo:
-    path: /articulos/{slug}
-    controller: App\Controller\ArticuloController::articulo_show
+#un_articulo:
+#    path: /articulos/{slug}
+#   controller: App\Controller\ArticuloController::articulo_show
+
+nuevo_articulo:
+    path: /articulos/nuevo
+    controller: App\Controller\ArticuloController::nuevo
+    #methods: POST
